@@ -50,7 +50,7 @@ occupations = [:]
 let individualScore = [75, 43, 103, 87, 12] //объявили массив
 var teamScore = 0 //объявили переменную со значением 0
 // начало цикла, идет сравнение и поиск в массиве чисел более 50, их 3 (на каждое значение к значению переменной прибавляется 3) получаем 9
-for score in individualScore {
+for score in individualScore { //идет обращение к ранее объявленному массиву
     if score > 50 {
         teamScore += 3
     } else { // в противном случае к 0 прибавляется 1, при каждой отработке числе менее 50, у нас в массиве их 2, поэтому добавляем еще 2
@@ -77,7 +77,7 @@ var optionalName2 = "John Cooper"
 var meeting = "Hello!"
 let name1 = optionalName1
 let name2 = optionalName2
-if optionalName1 == nil {
+if optionalName1 == nil { //массив в коде не объявлен, поэтому сразу отрабатывается условие
     meeting = "Hello, \(name2)"
     } else {meeting = "Hello, \(name1)"
     
